@@ -1,0 +1,278 @@
+
+.body{
+  width: 90%;
+  margin: auto;
+    line-height: 1.5;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+.row{
+  margin-top: 40px;
+}
+table{
+  width: 100%;
+}
+table,th,td{
+  border-collapse: collapse;
+  font-size :14px;
+  height: 30px;
+  text-align: center;
+}
+th{
+  background-color: #000000;
+  color: #fff;
+  font-size :18px;
+  font-weight :700;
+  line-height: 2;
+}table tr:nth-child(odd){
+  background-color:rgb(244, 248, 248);
+}
+table tr:nth-child(even){
+  background-color:white;
+}
+.myimg{
+  width: 100%;
+}
+.text h1 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 80%;
+    margin-left: 1%;
+    text-align: center;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;}
+.block {
+  width: 100%;
+margin: auto;
+     position: relative;
+    display: inline-block; 
+}
+h3{
+  margin-top: 20px;
+}
+/* card */
+
+figure.snip0056 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px ;
+  max-width: 580px;
+  min-height: 100px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+figure.snip0056 * {
+   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+figure.snip0056 > img {
+  width: 40%;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+  position: relative;
+  float: right;
+  right: -15%;
+  z-index: 1;
+}
+figure.snip0056 figcaption {
+  position: absolute;
+  left: 0;
+  width: 70%;
+}
+figure.snip0056 figcaption h3,
+figure.snip0056 figcaption p {
+  /* margin: 0; */
+  text-align: left;
+  /* padding: 0px 0; */
+  /* width: 100%; */
+}
+figure.snip0056 figcaption h3 {
+  font-size: 1.3em;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+figure.snip0056 figcaption h3 span {
+  font-weight: 800;
+}
+figure.snip0056 .position {
+  /* width: 100%; */
+  text-align: left;
+  /* padding: 10px 20px; */
+  font-size: 0.9em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #020202;
+  clear: both;
+}
+figure.snip0056.blue .position {
+  background: #20638f;
+}
+figure.snip0056:hover > img,
+figure.snip0056.hover > img {
+  right: -12%;
+}
+/* end card */
+/* nop hoc phi */
+
+.main-timeline{
+  font-family: 'Poppins', sans-serif;
+  }
+.main-timeline:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.main-timeline .timeline{
+  width: calc(50% + 9px);
+  padding: 20px 30px 20px 0;
+  margin: -20px 0 0 0;
+  border-radius: 20px;
+  border: 10px solid transparent;
+  border-right: 10px solid black;
+  float: left; 
+  position: relative;
+}
+.main-timeline .timeline:before,
+.main-timeline .timeline:after{
+  content: '';
+  background-color: #DA2677;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: -18px;
+  bottom: 40px;
+}
+.main-timeline .timeline:after{
+  border-radius: 3px;
+  transform: rotate(45deg);
+  right: 20px;
+}
+.main-timeline .timeline-content{
+  color: #fff;
+  background: linear-gradient(#D02578,#DA2677);
+  min-height: 130px;
+  padding: 0 0 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-icon{
+  font-size: 40px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 16px;
+}
+.main-timeline .title{
+  color: #DA2677;
+  background-color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px;
+  margin: 0 0 5px;
+}
+.main-timeline .description{
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 20px 80px 0 20px;
+}
+.main-timeline .timeline:nth-child(even){
+  float: right;
+  padding: 20px 0 20px 30px;
+  margin: -20px 0 0 0;
+  border-right: none;
+  border-left: 10px solid black;
+}
+.main-timeline .timeline:nth-child(even):before{
+  right: auto;
+  left: -18px;
+}
+.main-timeline .timeline:nth-child(even):after{
+  right: auto;
+  left: 20px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+  right: auto;
+  left: 16px;
+}
+.main-timeline .timeline:nth-child(even) .description{ margin: 20px 20px 0 80px; }
+.main-timeline .timeline:nth-child(4n+2):before,
+.main-timeline .timeline:nth-child(4n+2):after{
+  background-color: #4EB543;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-content{ background: linear-gradient(#80B02C,#4EB543); }
+.main-timeline .timeline:nth-child(4n+2) .title{ color: #4EB543; }
+.main-timeline .timeline:nth-child(4n+3):before,
+.main-timeline .timeline:nth-child(4n+3):after{
+  background-color: #3A3270;
+}
+.main-timeline .timeline:nth-child(4n+3) .timeline-content{ background: linear-gradient(#65286D,#3A3270); }
+.main-timeline .timeline:nth-child(4n+3) .title{ color: #3A3270; }
+.main-timeline .timeline:nth-child(4n+4):before,
+.main-timeline .timeline:nth-child(4n+4):after{
+  background-color: #0A2C80;
+}
+.main-timeline .timeline:nth-child(4n+4) .timeline-content{ background: linear-gradient(#2FD8D8,#0A2C80); }
+.main-timeline .timeline:nth-child(4n+4) .title{ color: #0A2C80; }
+@media screen and (max-width:767px){
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even){
+      width: 100%;
+      padding: 20px 0 20px 30px;
+      margin: -25px 0 0;
+      border-left: 10px solid #fff;
+      border-right: none;
+  }
+  .main-timeline .timeline:before,
+  .main-timeline .timeline:nth-child(even):before{
+      right: auto;
+      left: -17px;
+  }
+  .main-timeline .timeline:after,
+  .main-timeline .timeline:nth-child(even):after{
+      right: auto;
+      left: 20px;
+  }
+  .main-timeline .description,
+  .main-timeline .timeline:nth-child(even) .description{
+      margin: 20px 20px 0 80px;
+  }
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon{
+      left: 16px;
+      right: auto;
+  }
+}
+@media screen and (max-width:576px){
+  .main-timeline .timeline-content{ padding-bottom: 70px; }
+  .main-timeline .description,
+  .main-timeline .timeline:nth-child(even) .description{
+      margin: 20px 20px 0 20px;
+  }
+}
+/* end nop hoc phi */
+h3{
+  font-size: 30px;
+}

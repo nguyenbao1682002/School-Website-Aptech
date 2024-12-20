@@ -1,0 +1,240 @@
+.header-banner{
+    margin: 30px 50px;    
+  }
+  .header-banner h4{
+    display: inline-block;
+    margin-left:30px;
+  }
+  .header-banner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-banner div:last-child p{
+    display: inline-block;
+    padding-right:20px;
+    font-size: 25px;
+  }
+  .header-banner div:last-child i:last-child{
+    margin-left: 20px;
+    margin-top:5px;
+  }
+  .header-banner div:last-child i:last-child:hover{
+    cursor: pointer;
+  }
+  
+  
+ 
+  /* sự kiện */
+  /* dau card */
+  @import url(https://fonts.googleapis.com/css?family=Lato:700);
+.tbox {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+  /* end dau card */
+  .mycard{
+    width:85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .card{
+    border-radius: 5%;
+  }
+  .card-text{
+    font-size: 14px;
+  }
+  .text-muted{
+    font-size: 13px;
+  }
+  /* end su kien */
+  /* hover */
+  .client {
+    height: 400px;
+    background-color:rgb(211, 222, 243);
+        -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+    border-right:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+    cursor:pointer;
+      }
+  /* .card-img-top{
+    border-top-left-radius:5%;
+    border-top-right-radius: 5%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  } */
+        
+  .client:hover {
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+  -webkit-transform: scale(1.1,1.1); /* Safari */
+  transform: scale(1.1,1.1);
+    -webkit-box-shadow: 10px 10px 91px 0px rgb(79, 189, 193);
+  -moz-box-shadow: 10px 10px 91px 0px rgb(79, 193, 187);
+  box-shadow: 10px 10px 91px 0px rgb(108, 152, 194);
+    z-index:9999;
+    border-right:1px solid transparent;
+    border-bottom:1px solid transparent;
+    cursor:pointer;
+    background-color:#fff;
+  }
+  /* slide show */
+.slideshow{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow-item{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+   }
+.slideshow-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 16s infinite;
+}
+.slideshow-item-text{
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10rem 5rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+            0 2px 2px rgba(0,0,0,0.12),
+            0 4px 4px rgba(0,0,0,0.12),
+            0 8px 8px rgba(0,0,0,0.12),
+            0 16px 16px rgba(0,0,0,0.12);
+  border-radius:0px 20px 20px 0px;
+}.slideshow-item-text h5 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.slideshow-item-text p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+button{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(239, 242, 245);
+  border-radius: 30px;
+}.slideshow-item {
+  opacity: 0;
+  animation: hieu_ung_slideshow 16s infinite;
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+  animation-delay: 5s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+  animation-delay: 10s;
+}
+@keyframes hieu_ung_slideshow{
+  25%{
+      opacity: 1;
+  }
+  40%{
+      opacity: 0;
+  }
+}
+@keyframes zoom {
+  100%{
+      transform: scale(1.5);
+  }
+}@media screen and (max-width: 1000px){
+  .slideshow-item-text{
+      max-width: 70%;
+      padding: 5rem 1rem;
+  }
+  .slideshow-item-text h5 {
+      font-size: 3rem;
+           }
+}
+@media screen and (max-width: 768px){
+  .slideshow-item-text{
+      max-width: 100%;
+      padding: 2rem;
+      top: initial;
+      bottom:0;
+      transform: initial;
+      border-radius:none;
+  }
+  .slideshow-item-text h5 {
+      font-size: 2rem;
+           }
+  button{
+      display: block;
+      position: relative;
+      margin-top: 1rem;
+      margin-left: 2rem;
+  }
+}
+/* end slideshow */

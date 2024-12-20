@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  margin: auto;
+}
+.mybody{
+  width: 100%;
+
+    background-color: #fff;
+    margin: auto;
+}
+.hede{
+    height: 700px;
+}
+h2{
+  font-size: 30px;
+}
+h5{
+  font-size: 25px;
+}
+.animate-charcter{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin-top: 20px;
+}
+p{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;}
+
+.blue-bg{
+  position: fixed;
+  background: url(http://thainguyen.gov.vn/image/journal/article?img_id=2991502&t=1629189869668);
+  background-size: cover;
+  background-color: #58aff6;
+  top: 0;
+  height: 55%;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden}
+
+.white-bg{
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  height: 35%;
+  margin-top: 250px;
+  width: 100vw;
+  transform: skewY(5deg);
+  z-index: -1;}
+
+.content{
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  margin-top: 270px;
+  margin-left: 5%;
+  width: 85%;
+  background-color: transparent;
+}
+    
+.shadow{
+  box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3)}
+  /* number */
+.num{
+  width: 80%;
+  margin: auto;
+}
+.text{text-transform: lowercase;
+    border-radius: 8%;
+  text-align: center;
+  font-family: "Paytone One";
+    color: #202020;
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 22px;
+    color: #f88f06;
+    text-shadow: 0 13.36px 8.896px #d4dee2,0 -2px 1px #fff;
+    background-color: #f0ede8;
+    width: 100%;
+    min-height: 180px;
+    max-height: 250px;
+}
+.text2{
+  min-height: 180px;
+  max-height: 250px;
+  background-color: #ade2de;   
+}
+/* gioi thieu */
+.gt{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+/* boder */
+.row1{
+  margin-top: 50px;
+}
+.mybox{
+  margin: auto;
+ width: 80%;
+ /* height: 90%; */
+}
+.tbox {
+  margin-top: 5%;
+  margin-left: 3%;
+	width: 100%;
+  min-height: 200px;
+	/* height: 100%; */
+	box-sizing: border-box;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.tbox .content {
+  margin: auto;
+  width: 100%;
+  min-height: 180px;
+  /* height: 100%; */
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.tbox::before {
+
+	content: '';
+	position: absolute;
+	width: 150%;
+	height: 150%;
+	background: repeating-linear-gradient(
+			white 0%,
+			white 7.5px,
+			rgb(105, 183, 255) 7.5px,
+			rgb(105, 153, 255) 15px,
+			white 15px,
+			white 22.5px,
+			rgb(105, 158, 255) 22.5px,
+			rgb(105, 175, 255) 30px);
+	transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+	animation: animate 20s linear infinite;
+}
+
+.tbox .content {
+	position: relative;
+	background-color: rgb(247, 244, 244);
+	flex-direction: column;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: sans-serif;
+	z-index: 2;
+    padding-top: 0px;
+    
+}
+
+.tbox,
+.tbox .content {
+	box-shadow: 0 0 2px rgb(20, 149, 255),
+				0 0 5px rgba(0, 0, 0, 1),
+				inset 0 0 5px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+}
+
+.tbox .content h2 {
+	color: rgb(7, 7, 7);
+}
+
+.tbox .content p {
+	color: dimgray;
+  margin-left: 10px;
+  margin-right: 10px;
+    
+}
+
+@keyframes animate {
+	from {
+		background-position: 0;
+	}
+
+	to {
+		background-position: 0 450px;
+	}
+}
+
+/* end boder */
+/* slider */
+.slider{
+  margin: auto;
+  width: 90%;
+  min-height: 350px;
+}
+.carousel-item img{
+  min-height: 400px;
+  max-height: 600px;
+}
